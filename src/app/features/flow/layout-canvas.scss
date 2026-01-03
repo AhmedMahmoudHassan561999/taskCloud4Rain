@@ -1,0 +1,23 @@
+.pattern-grid {
+  background-color: #f8fafc;
+  background-image: radial-gradient(#cbd5e1 1.2px, transparent 1.2px);
+  background-size: 24px 24px;
+}
+
+#canvas-root {
+  display: block !important;
+  position: relative;
+
+  .cdk-drop-list-dragging .cdk-drag {
+    transition: none !important;
+  }
+}
+
+.cdk-drag-preview {
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  background: white;
+  width: 192px;
+  border: 2px solid #3b82f6;
+  padding: 1rem;
+}
