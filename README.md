@@ -30,3 +30,25 @@ https://drive.google.com/file/d/19kw6rdLDukkjKVV8GdDtKLXWx-DQc8G4/view?usp=shari
 ### Installation
 ```bash
 npm install
+ng serve
+
+Then open:
+http://localhost:4200
+
+
+## 🧠 Workflow Logic
+
+- Users drag tasks from the sidebar into the canvas.
+- Each task becomes a workflow node with its own position.
+- Clicking on two nodes sequentially creates a connection between them.
+- Connections are rendered using SVG Bezier curves.
+- When the workflow runs, nodes execute sequentially and update their status visually.
+
+---
+
+## ⚠️ Edge Cases Handled
+
+- Prevents duplicate connections between the same nodes
+- Nodes retain their position after dragging
+- Prevents execution while workflow is already running
+- Safe reset of workflow state
